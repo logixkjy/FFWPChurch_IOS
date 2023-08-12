@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "637446F5-FEF4-42AA-A1B8-A544956E287E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FFWPChurch/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "AudioGetInfo(function:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379 - 1c2b008ed1fb7a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379 - 1c2b008ed1fb7a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FFWPChurch/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "AudioGetInfo(function:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 3c7e7b1ee9243772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 1c2b008ed1fb7a24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 3c7e7b1ee9243772"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "848">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
