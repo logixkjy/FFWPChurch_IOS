@@ -10,6 +10,25 @@
 		7C710F562A7D26F4000EA097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C710F552A7D26F4000EA097 /* SnapKit */; };
 		7C710FAC2A850DDC000EA097 /* objcModule in Frameworks */ = {isa = PBXBuildFile; productRef = 7C710FAB2A850DDC000EA097 /* objcModule */; };
 		7C710FAF2A8513AB000EA097 /* FFAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C710FAE2A8513AB000EA097 /* FFAVPlayerViewController.swift */; };
+		7C9D3A3B2A876105004C0F23 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A3A2A876105004C0F23 /* IntroViewController.swift */; };
+		7C9D3A3D2A876566004C0F23 /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3A3C2A876167004C0F23 /* intro.mp4 */; };
+		7C9D3A402A890DC2004C0F23 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A3F2A890DC2004C0F23 /* KakaoSDK */; };
+		7C9D3A422A890DC2004C0F23 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A412A890DC2004C0F23 /* KakaoSDKAuth */; };
+		7C9D3A442A890DC2004C0F23 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A432A890DC2004C0F23 /* KakaoSDKCommon */; };
+		7C9D3A462A890DC2004C0F23 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A452A890DC2004C0F23 /* KakaoSDKUser */; };
+		7C9D3A482A890FA5004C0F23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3A472A890FA5004C0F23 /* GoogleService-Info.plist */; };
+		7C9D3A4A2A89BDC4004C0F23 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A492A89BDC4004C0F23 /* DataCenter.swift */; };
+		7C9D3A612A89C998004C0F23 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A602A89C998004C0F23 /* FacebookBasics */; };
+		7C9D3A632A89C998004C0F23 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A622A89C998004C0F23 /* FacebookCore */; };
+		7C9D3A652A89C998004C0F23 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A642A89C998004C0F23 /* FacebookLogin */; };
+		7C9D3A682A89CCAE004C0F23 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A672A89CCAE004C0F23 /* FirebaseAuth */; };
+		7C9D3A6A2A89CCAE004C0F23 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A692A89CCAE004C0F23 /* FirebaseMessaging */; };
+		7C9D3A772A8A4372004C0F23 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9D3A762A8A4372004C0F23 /* GoogleSignIn */; };
+		7C9D3A792A8B2720004C0F23 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9D3A782A8B2720004C0F23 /* Media.xcassets */; };
+		7C9D3A7C2A8B3267004C0F23 /* MNMToastValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A7B2A8B3267004C0F23 /* MNMToastValue.m */; };
+		7C9D3A842A8B3288004C0F23 /* MNMToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A7E2A8B3288004C0F23 /* MNMToast.m */; };
+		7C9D3A852A8B3288004C0F23 /* MNMToastConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A7F2A8B3288004C0F23 /* MNMToastConstants.m */; };
+		7C9D3A862A8B3288004C0F23 /* MNMToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D3A802A8B3288004C0F23 /* MNMToastView.m */; };
 		7CA3CF002A7D1ED200D436AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3CEFF2A7D1ED200D436AB /* AppDelegate.swift */; };
 		7CA3CF022A7D1ED200D436AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3CF012A7D1ED200D436AB /* SceneDelegate.swift */; };
 		7CA3CF042A7D1ED200D436AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3CF032A7D1ED200D436AB /* ViewController.swift */; };
@@ -23,6 +42,20 @@
 /* Begin PBXFileReference section */
 		7C710FAD2A851349000EA097 /* FFWPChurch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFWPChurch-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C710FAE2A8513AB000EA097 /* FFAVPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFAVPlayerViewController.swift; sourceTree = "<group>"; };
+		7C9D3A3A2A876105004C0F23 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		7C9D3A3C2A876167004C0F23 /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		7C9D3A472A890FA5004C0F23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C9D3A492A89BDC4004C0F23 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		7C9D3A6B2A89D1C3004C0F23 /* FFWPChurch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FFWPChurch.entitlements; sourceTree = "<group>"; };
+		7C9D3A782A8B2720004C0F23 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		7C9D3A7B2A8B3267004C0F23 /* MNMToastValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMToastValue.m; sourceTree = "<group>"; };
+		7C9D3A7D2A8B3288004C0F23 /* MNMToastValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMToastValue.h; sourceTree = "<group>"; };
+		7C9D3A7E2A8B3288004C0F23 /* MNMToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMToast.m; sourceTree = "<group>"; };
+		7C9D3A7F2A8B3288004C0F23 /* MNMToastConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMToastConstants.m; sourceTree = "<group>"; };
+		7C9D3A802A8B3288004C0F23 /* MNMToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNMToastView.m; sourceTree = "<group>"; };
+		7C9D3A812A8B3288004C0F23 /* MNMToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMToast.h; sourceTree = "<group>"; };
+		7C9D3A822A8B3288004C0F23 /* MNMToastConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMToastConstants.h; sourceTree = "<group>"; };
+		7C9D3A832A8B3288004C0F23 /* MNMToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNMToastView.h; sourceTree = "<group>"; };
 		7CA3CEFC2A7D1ED200D436AB /* FFWPChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFWPChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA3CEFF2A7D1ED200D436AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CA3CF012A7D1ED200D436AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,15 +72,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9D3A6A2A89CCAE004C0F23 /* FirebaseMessaging in Frameworks */,
+				7C9D3A652A89C998004C0F23 /* FacebookLogin in Frameworks */,
 				7C710FAC2A850DDC000EA097 /* objcModule in Frameworks */,
+				7C9D3A772A8A4372004C0F23 /* GoogleSignIn in Frameworks */,
+				7C9D3A402A890DC2004C0F23 /* KakaoSDK in Frameworks */,
 				7CA3CF152A7D1EE400D436AB /* Then in Frameworks */,
+				7C9D3A462A890DC2004C0F23 /* KakaoSDKUser in Frameworks */,
 				7C710F562A7D26F4000EA097 /* SnapKit in Frameworks */,
+				7C9D3A612A89C998004C0F23 /* FacebookBasics in Frameworks */,
+				7C9D3A682A89CCAE004C0F23 /* FirebaseAuth in Frameworks */,
+				7C9D3A442A890DC2004C0F23 /* KakaoSDKCommon in Frameworks */,
+				7C9D3A632A89C998004C0F23 /* FacebookCore in Frameworks */,
+				7C9D3A422A890DC2004C0F23 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C9D3A7A2A8B324A004C0F23 /* MNMToast */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D3A812A8B3288004C0F23 /* MNMToast.h */,
+				7C9D3A7E2A8B3288004C0F23 /* MNMToast.m */,
+				7C9D3A822A8B3288004C0F23 /* MNMToastConstants.h */,
+				7C9D3A7F2A8B3288004C0F23 /* MNMToastConstants.m */,
+				7C9D3A7D2A8B3288004C0F23 /* MNMToastValue.h */,
+				7C9D3A7B2A8B3267004C0F23 /* MNMToastValue.m */,
+				7C9D3A832A8B3288004C0F23 /* MNMToastView.h */,
+				7C9D3A802A8B3288004C0F23 /* MNMToastView.m */,
+			);
+			path = MNMToast;
+			sourceTree = "<group>";
+		};
 		7CA3CEF32A7D1ED200D436AB = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +125,14 @@
 		7CA3CEFE2A7D1ED200D436AB /* FFWPChurch */ = {
 			isa = PBXGroup;
 			children = (
+				7C9D3A7A2A8B324A004C0F23 /* MNMToast */,
+				7C9D3A6B2A89D1C3004C0F23 /* FFWPChurch.entitlements */,
+				7C9D3A472A890FA5004C0F23 /* GoogleService-Info.plist */,
 				7CA3CEFF2A7D1ED200D436AB /* AppDelegate.swift */,
+				7C9D3A492A89BDC4004C0F23 /* DataCenter.swift */,
 				7CA3CF012A7D1ED200D436AB /* SceneDelegate.swift */,
 				7CA3CF032A7D1ED200D436AB /* ViewController.swift */,
+				7C9D3A3A2A876105004C0F23 /* IntroViewController.swift */,
 				7C710FAE2A8513AB000EA097 /* FFAVPlayerViewController.swift */,
 				7CA3CF052A7D1ED200D436AB /* Main.storyboard */,
 				7CA3CF082A7D1ED300D436AB /* Assets.xcassets */,
@@ -77,6 +140,8 @@
 				7CA3CF0D2A7D1ED300D436AB /* Info.plist */,
 				7CA3CF1D2A7D1FF400D436AB /* commonDefine.swift */,
 				7C710FAD2A851349000EA097 /* FFWPChurch-Bridging-Header.h */,
+				7C9D3A3C2A876167004C0F23 /* intro.mp4 */,
+				7C9D3A782A8B2720004C0F23 /* Media.xcassets */,
 			);
 			path = FFWPChurch;
 			sourceTree = "<group>";
@@ -101,6 +166,16 @@
 				7CA3CF142A7D1EE400D436AB /* Then */,
 				7C710F552A7D26F4000EA097 /* SnapKit */,
 				7C710FAB2A850DDC000EA097 /* objcModule */,
+				7C9D3A3F2A890DC2004C0F23 /* KakaoSDK */,
+				7C9D3A412A890DC2004C0F23 /* KakaoSDKAuth */,
+				7C9D3A432A890DC2004C0F23 /* KakaoSDKCommon */,
+				7C9D3A452A890DC2004C0F23 /* KakaoSDKUser */,
+				7C9D3A602A89C998004C0F23 /* FacebookBasics */,
+				7C9D3A622A89C998004C0F23 /* FacebookCore */,
+				7C9D3A642A89C998004C0F23 /* FacebookLogin */,
+				7C9D3A672A89CCAE004C0F23 /* FirebaseAuth */,
+				7C9D3A692A89CCAE004C0F23 /* FirebaseMessaging */,
+				7C9D3A762A8A4372004C0F23 /* GoogleSignIn */,
 			);
 			productName = FFWPChurch;
 			productReference = 7CA3CEFC2A7D1ED200D436AB /* FFWPChurch.app */;
@@ -135,6 +210,10 @@
 				7CA3CF132A7D1EE300D436AB /* XCRemoteSwiftPackageReference "Then" */,
 				7C710F542A7D26F4000EA097 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7C710FAA2A850DDC000EA097 /* XCRemoteSwiftPackageReference "objcModule" */,
+				7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				7C9D3A5F2A89C997004C0F23 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				7C9D3A662A89CCAE004C0F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7C9D3A752A8A4372004C0F23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 7CA3CEFD2A7D1ED200D436AB /* Products */;
 			projectDirPath = "";
@@ -150,8 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9D3A3D2A876566004C0F23 /* intro.mp4 in Resources */,
 				7CA3CF0C2A7D1ED300D436AB /* LaunchScreen.storyboard in Resources */,
+				7C9D3A482A890FA5004C0F23 /* GoogleService-Info.plist in Resources */,
 				7CA3CF092A7D1ED300D436AB /* Assets.xcassets in Resources */,
+				7C9D3A792A8B2720004C0F23 /* Media.xcassets in Resources */,
 				7CA3CF072A7D1ED200D436AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,9 +245,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C9D3A862A8B3288004C0F23 /* MNMToastView.m in Sources */,
 				7CA3CF042A7D1ED200D436AB /* ViewController.swift in Sources */,
+				7C9D3A842A8B3288004C0F23 /* MNMToast.m in Sources */,
+				7C9D3A852A8B3288004C0F23 /* MNMToastConstants.m in Sources */,
 				7CA3CF1E2A7D1FF400D436AB /* commonDefine.swift in Sources */,
+				7C9D3A7C2A8B3267004C0F23 /* MNMToastValue.m in Sources */,
+				7C9D3A4A2A89BDC4004C0F23 /* DataCenter.swift in Sources */,
 				7C710FAF2A8513AB000EA097 /* FFAVPlayerViewController.swift in Sources */,
+				7C9D3A3B2A876105004C0F23 /* IntroViewController.swift in Sources */,
 				7CA3CF002A7D1ED200D436AB /* AppDelegate.swift in Sources */,
 				7CA3CF022A7D1ED200D436AB /* SceneDelegate.swift in Sources */,
 			);
@@ -313,22 +401,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FFWPChurch/FFWPChurch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RE43LDLX3D;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 65W6A6235S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FFWPChurch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "천보가정교회";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beaglemap.TranggleGPS;
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ffwp.church;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FFWPChurch/FFWPChurch-Bridging-Header.h";
@@ -344,22 +436,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FFWPChurch/FFWPChurch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RE43LDLX3D;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 65W6A6235S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FFWPChurch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "천보가정교회";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.beaglemap.TranggleGPS;
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ffwp.church;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "FFWPChurch/FFWPChurch-Bridging-Header.h";
@@ -408,6 +504,38 @@
 				kind = branch;
 			};
 		};
+		7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		7C9D3A5F2A89C997004C0F23 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		7C9D3A662A89CCAE004C0F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		7C9D3A752A8A4372004C0F23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		7CA3CF132A7D1EE300D436AB /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -428,6 +556,56 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7C710FAA2A850DDC000EA097 /* XCRemoteSwiftPackageReference "objcModule" */;
 			productName = objcModule;
+		};
+		7C9D3A3F2A890DC2004C0F23 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		7C9D3A412A890DC2004C0F23 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		7C9D3A432A890DC2004C0F23 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		7C9D3A452A890DC2004C0F23 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A3E2A890DC2004C0F23 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+		7C9D3A602A89C998004C0F23 /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A5F2A89C997004C0F23 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		7C9D3A622A89C998004C0F23 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A5F2A89C997004C0F23 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		7C9D3A642A89C998004C0F23 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A5F2A89C997004C0F23 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		7C9D3A672A89CCAE004C0F23 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A662A89CCAE004C0F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		7C9D3A692A89CCAE004C0F23 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A662A89CCAE004C0F23 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		7C9D3A762A8A4372004C0F23 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9D3A752A8A4372004C0F23 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 		7CA3CF142A7D1EE400D436AB /* Then */ = {
 			isa = XCSwiftPackageProductDependency;

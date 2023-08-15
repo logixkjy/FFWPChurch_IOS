@@ -8,8 +8,9 @@
 import Foundation
 
 //let MAIN_URL = "http://church.ffwp.org"
+let MAIN_URL = "http://cbchurch.iandyou.kr"
 
-let MAIN_URL = "http://logixkjy.dothome.co.kr/ffpwchurch.html"
+//let MAIN_URL = "http://logixkjy.dothome.co.kr/ffpwchurch.html"
 
 //let MAIN_URL = "http://church.iandyou.kr"
 

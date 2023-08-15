@@ -7,47 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379"
+            uuid = "B2D6E06D-70E2-4A9C-93F3-F6084159EDF8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FFWPChurch/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
-            landmarkName = "AudioGetInfo(function:)"
+            startingLineNumber = "566"
+            endingLineNumber = "566"
+            landmarkName = "facebookLogin()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379 - 1c2b008ed1fb7a24"
+                  uuid = "B2D6E06D-70E2-4A9C-93F3-F6084159EDF8 - 70c222cb1be6b05f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;FBSDKLoginKit.LoginManagerLoginResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.facebookLogin() -&gt; ()"
                   moduleName = "FFWPChurch"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  urlString = "file:///Users/jooyoungkim/git/FFWPChurch_IOS/FFWPChurch/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "236"
-                  endingLineNumber = "236"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "566"
+                  endingLineNumber = "566"
+                  offsetFromSymbolStart = "896">
                </Location>
                <Location
-                  uuid = "D8C22B98-31A2-40CC-A79A-ED8B6B797379 - 1c2b008ed1fb7a24"
+                  uuid = "B2D6E06D-70E2-4A9C-93F3-F6084159EDF8 - 70c222cb1be6b05f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;FBSDKLoginKit.LoginManagerLoginResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.facebookLogin() -&gt; ()"
                   moduleName = "FFWPChurch"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  urlString = "file:///Users/jooyoungkim/git/FFWPChurch_IOS/FFWPChurch/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "236"
-                  endingLineNumber = "236"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "566"
+                  endingLineNumber = "566"
+                  offsetFromSymbolStart = "104">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,62 +55,62 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B"
+            uuid = "E4E7C820-C7F9-4638-8AD9-52696A8B8E57"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FFWPChurch/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "382"
+            endingLineNumber = "382"
             landmarkName = "AudioGetInfo(function:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 3c7e7b1ee9243772"
+                  uuid = "E4E7C820-C7F9-4638-8AD9-52696A8B8E57 - a80b9b112f0f7234"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.String) -&gt; () in FFWPChurch.ViewController.VideoSetPlay(vimeoID: Swift.String) -&gt; ()"
+                  moduleName = "FFWPChurch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jooyoungkim/git/FFWPChurch_IOS/FFWPChurch/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "382"
+                  endingLineNumber = "382"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "E4E7C820-C7F9-4638-8AD9-52696A8B8E57 - a22b41f2fa541ca7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
                   moduleName = "FFWPChurch"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  urlString = "file:///Users/jooyoungkim/git/FFWPChurch_IOS/FFWPChurch/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "235"
-                  endingLineNumber = "235"
-                  offsetFromSymbolStart = "636">
+                  startingLineNumber = "382"
+                  endingLineNumber = "382"
+                  offsetFromSymbolStart = "848">
                </Location>
                <Location
-                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 1c2b008ed1fb7a24"
+                  uuid = "E4E7C820-C7F9-4638-8AD9-52696A8B8E57 - 827e3a62c28b5273"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;Any&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
                   moduleName = "FFWPChurch"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
+                  urlString = "file:///Users/jooyoungkim/git/FFWPChurch_IOS/FFWPChurch/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "236"
-                  endingLineNumber = "236"
+                  startingLineNumber = "383"
+                  endingLineNumber = "383"
                   offsetFromSymbolStart = "72">
-               </Location>
-               <Location
-                  uuid = "38CCB6C2-A60E-4CB5-AAFB-68AA231FE37B - 3c7e7b1ee9243772"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FFWPChurch.ViewController.AudioGetInfo(function: Swift.String) -&gt; ()"
-                  moduleName = "FFWPChurch"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jooyoungkim/Documents/FFWPChurch/FFWPChurch/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "235"
-                  endingLineNumber = "235"
-                  offsetFromSymbolStart = "848">
                </Location>
             </Locations>
          </BreakpointContent>
