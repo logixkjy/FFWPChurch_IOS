@@ -45,6 +45,8 @@ class ViewController: UIViewController {
     var isTTSPlay = true
     var isMultiPlay = false
     
+    var isStopClick = false
+    
     var timer: Timer?
     
     var mainDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -362,6 +364,7 @@ extension ViewController: WKNavigationDelegate {
     func AudioStop() {
         self.jsonText = ""
         self.isMultiPlay = false // 오디오 정지가 되면 멀티플레이도 정지 되어야 함,
+        self.isStopClick = true
         mainDelegate.avAudioPlayer?.stop()
     }
     
@@ -835,12 +838,12 @@ extension ViewController: WKNavigationDelegate {
                 print("UIEventSubtypeRemoteControlStop")
                 self.mainDelegate.avAudioPlayer?.stop()
                 
-                let exec = "audioStopClick();"
-                self.webView.evaluateJavaScript(exec) { result, error in
-                    if let anError = error {
-                        print("[Error Message] : \(anError)")
-                    }
-                }
+//                let exec = "audioStopClick();"
+//                self.webView.evaluateJavaScript(exec) { result, error in
+//                    if let anError = error {
+//                        print("[Error Message] : \(anError)")
+//                    }
+//                }
                 
                 var nowPlayingInfo = MPNowPlayingInfoCenter.default().nowPlayingInfo ?? [String: Any]()
                 nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] =  mainDelegate.avAudioPlayer?.progress
@@ -1034,12 +1037,18 @@ extension ViewController: STKAudioPlayerDelegate {
             }
         }
         
-        self.jsonText = ""
+        if stopReason != .userAction {
+            self.isStopClick = true
+        }
         
-        let exec = "audioStopClick();"
-        self.webView.evaluateJavaScript(exec) { result, error in
-            if let anError = error {
-                print("[Error Message] : \(anError)")
+        self.jsonText = ""
+        if self.isStopClick {
+            self.isStopClick = false
+            let exec = "audioStopClick();"
+            self.webView.evaluateJavaScript(exec) { result, error in
+                if let anError = error {
+                    print("[Error Message] : \(anError)")
+                }
             }
         }
     }
