@@ -360,6 +360,7 @@ extension ViewController: WKNavigationDelegate {
     }
     
     func AudioStop() {
+        self.jsonText = ""
         mainDelegate.avAudioPlayer?.stop()
     }
     
@@ -713,7 +714,7 @@ extension ViewController: WKNavigationDelegate {
               let version = dictionary["CFBundleShortVersionString"] as? String
         else { return }
         
-        let exec = "\(function)(\"" + version + "\");"
+        let exec = String.init(format: "%@(\"%@\");", function, version)
         
         self.webView.evaluateJavaScript(exec) { result, error in
             if let anError = error {
@@ -1031,6 +1032,8 @@ extension ViewController: STKAudioPlayerDelegate {
                 return
             }
         }
+        
+        self.jsonText = ""
         
         let exec = "audioStopClick();"
         self.webView.evaluateJavaScript(exec) { result, error in
