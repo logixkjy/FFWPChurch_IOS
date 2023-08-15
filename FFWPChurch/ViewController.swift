@@ -361,6 +361,7 @@ extension ViewController: WKNavigationDelegate {
     
     func AudioStop() {
         self.jsonText = ""
+        self.isMultiPlay = false // 오디오 정지가 되면 멀티플레이도 정지 되어야 함,
         mainDelegate.avAudioPlayer?.stop()
     }
     
