@@ -49,6 +49,9 @@ class ViewController: UIViewController {
     
     var timer: Timer?
     
+    var previousTrackCommand: Any?
+    var nextTrackCommand: Any?
+    
     var mainDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -65,8 +68,8 @@ class ViewController: UIViewController {
         try! session.setCategory(.playback)
         try! session.setActive(true)
         
-        UIApplication.shared.beginReceivingRemoteControlEvents()
-        self.becomeFirstResponder()
+//        UIApplication.shared.beginReceivingRemoteControlEvents()
+//        self.becomeFirstResponder()
         
         let commonProcessPool: WKProcessPool = WKProcessPool.init()
         let config: WKWebViewConfiguration = WKWebViewConfiguration.init()
@@ -126,6 +129,21 @@ class ViewController: UIViewController {
             let URL = URL(string: MAIN_URL)
             self.webView.load(URLRequest(url: URL!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: TIME_OUT_INTERVAL))
         }
+        
+        let commandCenter = MPRemoteCommandCenter.shared()
+        
+        // 제어 센터 재생버튼 누르면 발생할 이벤트를 정의합니다.
+        commandCenter.playCommand.addTarget { (commandEvent) -> MPRemoteCommandHandlerStatus in
+            self.mainDelegate.avAudioPlayer?.resume()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        
+        // 제어 센터 pause 버튼 누르면 발생할 이벤트를 정의합니다.
+        commandCenter.pauseCommand.addTarget { (commandEvent) -> MPRemoteCommandHandlerStatus in
+            self.mainDelegate.avAudioPlayer?.pause()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -209,6 +227,28 @@ class ViewController: UIViewController {
     @objc func didOpenURLNotification(noti: Notification) {
         guard let dic = (noti.userInfo ?? [:]) as? [String:String] else { return }
         self.moveDirectURL(dic: dic)
+    }
+    
+    func playBackward() {
+        if self.playIndex > 0 {
+//            self.isMultiPlay = false
+            mainDelegate.avAudioPlayer?.stop()
+            self.playIndex -= 1
+            let playItem = self.playList[self.playIndex]
+            AudiosSetPlayMulti(index: playItem["key"]!, title: playItem["title"]! , desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
+//            self.isMultiPlay = true
+        }
+    }
+    
+    func playForward() {
+        if self.playIndex < self.playList.count - 1 {
+//            self.isMultiPlay = false
+            mainDelegate.avAudioPlayer?.stop()
+            self.playIndex += 1
+            let playItem = self.playList[self.playIndex]
+            AudiosSetPlayMulti(index: playItem["key"]!, title: playItem["title"]! , desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
+//            self.isMultiPlay = true
+        }
     }
 }
 
@@ -325,6 +365,33 @@ extension ViewController: WKNavigationDelegate {
     }
     
     func AudiosSetPlay(index: String, title: String, desc: String, audioPath: String, type: String) {
+        let commandCenter = MPRemoteCommandCenter.shared()
+        
+        commandCenter.previousTrackCommand.removeTarget(previousTrackCommand)
+        commandCenter.nextTrackCommand.removeTarget(nextTrackCommand)
+        
+        var param = [String:String]()
+        param.updateValue(index, forKey: "playKey") // 고유키
+        param.updateValue(title, forKey: "playTitle")  // 제목
+        param.updateValue(desc, forKey: "playSubTitle")  // 부제목
+        param.updateValue(audioPath, forKey: "playURL")  // 스트리밍 주소
+        param.updateValue(type, forKey: "playType")  // 스트리밍 타입(노래, 경음악)
+        
+        jsonText = (JsonUtil.jsonWriter(param) as! String)
+        print(jsonText as Any)
+        
+        audioTitle = title
+        audioDesc = desc
+        mainDelegate.avAudioPlayer?.stop()
+        
+        synthesizer.stopSpeaking(at: .immediate)
+        
+        self.play(audioPath: audioPath)
+    }
+    
+    // 싱글 플레이시와 충돌이 있어 별도로 추가
+    func AudiosSetPlayMulti(index: String, title: String, desc: String, audioPath: String, type: String) {
+        
         var param = [String:String]()
         param.updateValue(index, forKey: "playKey") // 고유키
         param.updateValue(title, forKey: "playTitle")  // 제목
@@ -345,12 +412,27 @@ extension ViewController: WKNavigationDelegate {
     }
     
     func AudiosSetMultPlay(jsonParam: String) {
+        let commandCenter = MPRemoteCommandCenter.shared()
+        
+        // 제어 센터 Forward 버튼 누르면 발생할 이벤트를 정의합니다.
+        previousTrackCommand = commandCenter.previousTrackCommand.addTarget { (commandEvent) -> MPRemoteCommandHandlerStatus in
+            self.playBackward()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        
+        // 제어 센터 Backward 버튼 누르면 발생할 이벤트를 정의합니다.
+        nextTrackCommand = commandCenter.nextTrackCommand.addTarget { (commandEvent) -> MPRemoteCommandHandlerStatus in
+            self.playForward()
+            return MPRemoteCommandHandlerStatus.success
+        }
+        
         self.playList = JsonUtil.jsonParser(jsonParam) as! [Dictionary<String, String>]
         self.playIndex = 0;
         self.isMultiPlay = true
         
         let playItem = self.playList[self.playIndex]
-        AudiosSetPlay(index: playItem["key"]!, title: playItem["title"]!, desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
+
+        AudiosSetPlayMulti(index: playItem["key"]!, title: playItem["title"]!, desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
     }
     
     func AudioPlay() {
@@ -1022,16 +1104,17 @@ extension ViewController: STKAudioPlayerDelegate {
     
     func audioPlayer(_ audioPlayer: STKAudioPlayer, didFinishPlayingQueueItemId queueItemId: NSObject, with stopReason: STKAudioPlayerStopReason, andProgress progress: Double, andDuration duration: Double) {
         
-        if self.isMultiPlay {
+        if self.isMultiPlay && stopReason != .userAction {
             // 마지막 곡이라면 정지 처리 해주어야 한다.
             if self.playIndex == self.playList.count - 1 {
                 self.isMultiPlay = false
-                self.playIndex = 0
+                self.playIndex = -1
+                self.playList = []
             } else {
                 self.playIndex += 1
                 
                 let playItem = self.playList[self.playIndex]
-                AudiosSetPlay(index: playItem["key"]!, title: playItem["title"]! , desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
+                AudiosSetPlayMulti(index: playItem["key"]!, title: playItem["title"]! , desc: playItem["subTitle"] ?? "", audioPath: playItem["audioUrl"]!, type: playItem["audioType"] ?? "")
                 
                 return
             }
