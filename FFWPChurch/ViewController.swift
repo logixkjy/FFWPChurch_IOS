@@ -105,6 +105,12 @@ class ViewController: UIViewController {
             make.height.equalTo(self.view).offset(-(DataCenter.getStatusBarHeight() + DataCenter.getSafeAreaBottom()))
         }
         
+        for vi in self.webView.subviews {
+            if vi.isKind(of: UIScrollView.self) {
+                (vi as! UIScrollView).bounces = false
+            }
+        }
+        
         self.botImage = UIImageView().then {
             $0.image = UIImage(named: "statusBG")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch)
         }
@@ -492,6 +498,7 @@ extension ViewController: WKNavigationDelegate {
                         
                         //                    self.mainDelegate.avVideoPlayer?.view.setFrame:self.view.frame];
                         
+                        AppDelegate.AppUtility.lockOrientation(.all)
                         self.present(self.mainDelegate.avVideoPlayer!, animated: false)
                     }
                 }
@@ -527,6 +534,7 @@ extension ViewController: WKNavigationDelegate {
     }
     
     @objc func AVPlayerItemDidPlayToEndTimeNotification() {
+        AppDelegate.AppUtility.lockOrientation(.portrait)
         mainDelegate.avVideoPlayer?.player?.pause()
         mainDelegate.avVideoPlayer?.dismiss(animated: false)
     }

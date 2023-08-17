@@ -14,11 +14,16 @@ class FFAVPlayerViewController: AVPlayerViewController {
         super.viewDidLoad()
     }
     
-    override public var shouldAutorotate: Bool {
-        return true
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        //UIDevice.current.setValue(value, forKey: "orientation")
+        AppDelegate.AppUtility.lockOrientation(.all)
     }
-
-    override public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .all
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        AppDelegate.AppUtility.lockOrientation(.portrait)
     }
 }
