@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     var webView: WKWebView!
     var topImage: UIImageView!
-    var botImage: UIImageView!
+    var botView: UIView!
     var jsContext: JSContext!
     var _webConfig: WKWebViewConfiguration?
     var synthesizer: AVSpeechSynthesizer!
@@ -105,11 +105,11 @@ class ViewController: UIViewController {
             make.height.equalTo(self.view).offset(-(DataCenter.getStatusBarHeight() + DataCenter.getSafeAreaBottom()))
         }
         
-        self.botImage = UIImageView().then {
-            $0.image = UIImage(named: "statusBG")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch)
+        self.botView = UIView().then {
+            $0.backgroundColor = UIColor.fromRGB(rgbValue: 0x86297f)
         }
-        self.view.addSubview(self.botImage)
-        self.botImage.snp.makeConstraints { make in
+        self.view.addSubview(self.botView)
+        self.botView.snp.makeConstraints { make in
             make.bottom.equalTo(self.view)
             make.leading.equalTo(self.view)
             make.width.equalTo(self.view)
